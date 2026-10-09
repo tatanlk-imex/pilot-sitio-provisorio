@@ -5,6 +5,34 @@
   var RAIZ = document.documentElement.getAttribute("data-raiz") || "./";
   function norm(t) { return (t || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
 
+  // Animaciones al desplazarse (solo con JavaScript; sin él todo se ve igual)
+  document.documentElement.classList.add("js");
+  var pend = [];
+  document.querySelectorAll(".titulo-sec,.fam-tile,.personas li,.tarjeta,.cinta .dato,.pasos li,.demo-frixion,.aviso-banda,.linea-tiempo li").forEach(function (el) {
+    if (el.getBoundingClientRect().top > window.innerHeight) { el.classList.add("rv"); pend.push(el); }
+  });
+  var esperando = false;
+  function revisar() {
+    esperando = false;
+    pend = pend.filter(function (el) {
+      if (el.getBoundingClientRect().top < window.innerHeight * 0.92) { el.classList.add("vis"); return false; }
+      return true;
+    });
+    if (!pend.length) { window.removeEventListener("scroll", pedir); window.removeEventListener("resize", pedir); }
+  }
+  function pedir() { if (!esperando) { esperando = true; window.setTimeout(revisar, 30); } }
+  window.addEventListener("scroll", pedir, { passive: true }); window.addEventListener("resize", pedir);
+  window.addEventListener("load", pedir);
+  var iv = window.setInterval(function () { if (!pend.length) { window.clearInterval(iv); return; } revisar(); }, 400);
+  // Demostración FriXion
+  var bb = document.getElementById("demo-borrar"), dt = document.getElementById("demo-texto");
+  if (bb && dt) {
+    bb.addEventListener("click", function () {
+      dt.classList.add("borrado"); bb.disabled = true; evento("demo_frixion");
+      setTimeout(function () { dt.textContent = "¡Corregido! Ahora sí."; dt.classList.remove("borrado"); bb.disabled = false; bb.textContent = "Probar otra vez"; }, 1500);
+    });
+  }
+
   // Menú móvil
   var btn = document.querySelector(".btn-menu"), nav = document.getElementById("menu-principal");
   if (btn && nav) {
