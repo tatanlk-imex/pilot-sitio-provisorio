@@ -1,7 +1,7 @@
-/* PILOT Chile - estilos. Paleta INSPIRADA en los sitios oficiales de Pilot (azul marino dominante, acentos rojo y dorado); no son colores oficiales. */
+/* PILOT Chile - estilos. Azul corporativo PILOT Blue (#074EA2, de la guía de marca de PILOT, Pantone 293C); los acentos rojo y dorado son del sitio, no de PILOT. */
 @font-face{font-family:"Roboto Flex";src:url("../fuentes/roboto-flex-latin.woff2") format("woff2");font-weight:100 1000;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:"Roboto Flex";src:url("../fuentes/roboto-flex-latin-ext.woff2") format("woff2");font-weight:100 1000;font-display:swap;unicode-range:U+0100-02AF,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
-:root{--azul:#0B2A66;--azul-2:#13408F;--azul-3:#E8EEF9;--rojo:#C8102E;--acento:#EDB92E;--acento-osc:#D9A416;--tinta:#0E1B3D;--gris-9:#1B2540;--gris-7:#4A5470;--gris-4:#8E97AD;--gris-2:#DDE2EE;--gris-1:#F4F6FB;--ok:#1E7B3A;--radio:16px;--sombra:0 8px 28px rgba(11,42,102,.12);--max:1180px;--fuente:"Roboto Flex","Segoe UI",Roboto,"Helvetica Neue",Arial,system-ui,sans-serif}
+:root{--azul:#074EA2;--azul-2:#0B63C9;--azul-3:#E6EEF8;--rojo:#C8102E;--acento:#EDB92E;--acento-osc:#D9A416;--tinta:#0E1B3D;--gris-9:#1B2540;--gris-7:#4A5470;--gris-4:#8E97AD;--gris-2:#DDE2EE;--gris-1:#F4F6FB;--ok:#1E7B3A;--radio:16px;--sombra:0 8px 28px rgba(11,42,102,.12);--max:1180px;--fuente:"Roboto Flex","Segoe UI",Roboto,"Helvetica Neue",Arial,system-ui,sans-serif}
 [hidden]{display:none!important}
 *{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;font-family:var(--fuente);font-size:1rem;line-height:1.65;color:var(--tinta);background:#fff;overflow-x:hidden}
@@ -29,7 +29,7 @@ h1{font-size:clamp(2rem,5vw,3.4rem)}h2{font-size:clamp(1.55rem,3.2vw,2.2rem)}h3{
 .btn-blanco{background:transparent;color:#fff;border-color:#fff}.btn-blanco:hover{background:#fff;color:var(--azul)}
 .btn-peq{min-height:40px;padding:8px 18px;font-size:.92rem}
 .btn-wsp{background:#25D366;border-color:#25D366;color:#0B3D1E}.btn-wsp:hover{background:#1EBE5A;border-color:#1EBE5A;color:#06280F}
-.hero{background:radial-gradient(1200px 500px at 85% -10%,#1d5bd1 0,transparent 60%),linear-gradient(160deg,var(--azul) 0,#06183F 100%);color:#fff;padding:56px 0 64px;overflow:hidden}
+.hero{background:radial-gradient(1200px 500px at 85% -10%,#1d5bd1 0,transparent 60%),linear-gradient(160deg,var(--azul) 0,#04285A 100%);color:#fff;padding:56px 0 64px;overflow:hidden}
 .hero h1{color:#fff}.hero p{font-size:1.15rem;max-width:34em;opacity:.95}
 .hero .rejilla{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
 .hero .acciones{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
@@ -72,7 +72,7 @@ h1{font-size:clamp(2rem,5vw,3.4rem)}h2{font-size:clamp(1.55rem,3.2vw,2.2rem)}h3{
 .resultado{background:var(--azul-3);border-radius:var(--radio);padding:18px;margin-top:14px}
 form.cotizar{display:grid;gap:14px;max-width:640px}form.cotizar label{font-weight:700;display:grid;gap:5px}form.cotizar input,form.cotizar select,form.cotizar textarea{font:inherit;padding:11px 13px;border:1.5px solid var(--gris-4);border-radius:10px;min-height:46px;width:100%}
 .hp{position:absolute;left:-9999px}
-.pie{background:#06183F;color:#cfd8ee;padding:44px 0 26px;margin-top:0}.pie a{color:#fff}.pie h2{font-size:1.05rem;color:#fff}.pie .col{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px}.pie ul{list-style:none;padding:0;margin:0}.pie li{margin-bottom:.4em}.pie .legal{border-top:1px solid rgba(255,255,255,.18);margin-top:26px;padding-top:16px;font-size:.85rem}
+.pie{background:#04285A;color:#cfd8ee;padding:44px 0 26px;margin-top:0}.pie a{color:#fff}.pie h2{font-size:1.05rem;color:#fff}.pie .col{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px}.pie ul{list-style:none;padding:0;margin:0}.pie li{margin-bottom:.4em}.pie .legal{border-top:1px solid rgba(255,255,255,.18);margin-top:26px;padding-top:16px;font-size:.85rem}
 .aviso-cookies{position:fixed;left:12px;right:12px;bottom:12px;z-index:250;background:#fff;border:2px solid var(--azul);border-radius:14px;padding:14px 18px;box-shadow:0 10px 36px rgba(0,0,0,.35);display:flex;gap:14px;flex-wrap:wrap;align-items:center;max-width:720px;margin:0 auto}.aviso-cookies p{margin:0;flex:1;min-width:220px;font-size:.92rem}
 .wsp-flotante{position:fixed;right:18px;bottom:20px;z-index:160;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.28)}.wsp-flotante svg{width:32px;height:32px}
 .barra-movil{display:none}
