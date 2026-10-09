@@ -60,7 +60,6 @@ RewriteRule ^producto/set-pintor-pastel-extra-finos-4-un/?$ /sets-y-kits/set-pin
 RewriteRule ^producto/set-pintor-cl-sicos-extra-finos-4-un/?$ /sets-y-kits/set-pintor-clasicos-extra-finos-4-un-swptef02/ [R=301,L]
 RewriteRule ^producto/set-tiral-neas-permanente-5-un/?$ /sets-y-kits/set-tiralineas-permanente-5-un-swdrs5n/ [R=301,L]
 RewriteRule ^producto/cartucho-para-l-piz-brush-pen-fdf-y-fdm-negro/?$ /sets-y-kits/cartucho-para-lapiz-brush-pen-fdf-y-fdm-negro-s15fdb/ [R=301,L]
-RewriteRule ^producto/l-piz-gel-choose-0-7-plateado/?$ /sets-y-kits/lapiz-gel-choose-0-7-plateado-blch7si/ [R=301,L]
 RewriteRule ^producto/cartucho-lapicera-parallel-12-un/?$ /sets-y-kits/cartucho-lapicera-parallel-12-un-icp3ast/ [R=301,L]
 RewriteRule ^producto/marcador-doble-punta-caf-oscuro/?$ /sets-y-kits/marcador-doble-punta-cafe-oscuro-scatmbn/ [R=301,L]
 RewriteRule ^producto/marcador-ropa-permawash-negro/?$ /sets-y-kits/marcador-ropa-permawash-negro-swlmfb/ [R=301,L]
